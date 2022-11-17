@@ -1,0 +1,23 @@
+div {
+    width: 300px;
+    height: 100px;
+	 background: red;
+
+}
+
+form input[value="Submit"]{
+	display: inline-block;
+	width: 270px;
+	height: 40px;
+	color: #000;
+	background: #fff;
+}
+
+.zero {
+	display: inline-block;
+	width: auto;
+	height: auto;
+	background: #fff;
+}
+
+

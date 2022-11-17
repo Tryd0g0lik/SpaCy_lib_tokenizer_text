@@ -1,0 +1,52 @@
+.table {
+	background: #ccc;
+    display: inline-block;
+    width: 100%;
+
+	.table__left,
+	.table__right{
+		vertical-align: top;
+		float: left;
+		width: 49.5%;
+		background: blue;
+
+
+
+	}
+	.table__left{
+		background: #00d0ff;
+		padding-left: 10px;
+		border-right: 3px red;
+
+
+	}
+	.table__right{
+
+		float:right;
+		padding-right: 10px;
+
+	}
+}
+
+div li{
+	display: block;
+	width: inherit;
+}
+li div{
+	display: inline-block;
+	min-width: 100px;
+	width: 100%;
+	max-width: 200px;
+}
+li div:last-child{
+	text-align: right;
+}
+
+.table__right{
+	li div.table__right_equate:first-child{
+		text_align: left;
+	}
+	li div.table__right_equate:last-child{
+		text_align: right;
+	}
+}

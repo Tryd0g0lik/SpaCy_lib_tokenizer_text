@@ -7,17 +7,44 @@
    media='screen,projection'/>
 </head>
 <body>
-<!--{% load static %}-->
 
-{% block title %}Каталог{% endblock %}
-{% block content %}
+
+<h3>Каталог</h3>
 
 <div id="main">
-   <div class="text"></div>
-   <div class="nuber"></div>
+   
+   
+   <div class="table">
+      <div class="table__left">
+         <ul>
+         {% for list_words in data_token.0 %}
+            
+            <li>
+               <div class="table__left_equate"> {{ list_words.0 }} </div>
+               <div class="table__left_equate">{{ list_words.1}}</div>
+            </li>
+         {% endfor %}
+         </ul>
+      </div>
+      <div class="table__right">
+         <ul>
+          {% for list_umber in data_token.1 %}
+            
+            <li>
+               <div class="table__right_equate"> {{ list_umber.0 }} </div>
+               <div class="table__right_equate">{{ list_umber.1}}</div>
+            </li>
+         {% endfor %}
+         </ul>
+      </div>
+      
+   </div>
+   
+   
+   
    
 </div>
-{% endblock %}
+
 </body>
 </html>
 

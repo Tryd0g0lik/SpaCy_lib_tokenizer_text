@@ -4,7 +4,6 @@
   display: inline-block;
   width: 100%;
 }
-
 /* line 6, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 .table .table__left,
 .table .table__right {
@@ -13,26 +12,22 @@
   width: 49.5%;
   background: blue;
 }
-
 /* line 16, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 .table .table__left {
   background: #00d0ff;
   padding-left: 10px;
   border-right: 3px red;
 }
-
 /* line 23, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 .table .table__right {
   float: right;
   padding-right: 10px;
 }
-
 /* line 31, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 div li {
   display: block;
   width: inherit;
 }
-
 /* line 35, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 li div {
   display: inline-block;
@@ -40,19 +35,15 @@ li div {
   width: 100%;
   max-width: 200px;
 }
-
 /* line 41, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 li div:last-child {
   text-align: right;
 }
-
 /* line 46, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 .table__right li div.table__right_equate:first-child {
   text_align: left;
 }
-
 /* line 49, D:/django-sites/test-ApRbot/new_prodject/apps/static/scss/style.scss */
 .table__right li div.table__right_equate:last-child {
   text_align: right;
 }
-/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,5 @@
 import spacy
-pro_list_count : list = []
-integ_list_count : list = []
-pro_list = []
-integ_list = []
-word : str = None
+
 nlp = spacy.load("en_core_web_sm")
 
 doc = nlp("Apple is looking at buying U.K. startup for $1 billion")
@@ -16,6 +12,11 @@ def __readingTexts(data_form: str):
 
 
 def tokenizingText(data_form):
+    pro_list_count: list = []
+    integ_list_count: list = []
+    pro_list = []
+    integ_list = []
+    word: str = None
 
     doc = nlp(__readingTexts(data_form))
     print(doc)
@@ -32,9 +33,9 @@ def tokenizingText(data_form):
         pro_list_count.append((word, pro_list.count(word)))
 
     for number in integ_list:
-        integ_list_count.append(( number  , integ_list.count(number)))
+        integ_list_count.append(( number, integ_list.count(number)))
 
-    return integ_list_count
+    return (pro_list_count, integ_list_count)
 
 
 
